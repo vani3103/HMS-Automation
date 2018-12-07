@@ -1,0 +1,38 @@
+﻿[
+	{
+		"doctor_name": "Sanjana",
+		"specialization": "ENT"
+	},
+	{
+		"doctor_name": "Indrajit",
+		"specialization": "nephrologist"
+	},
+	{
+		"doctor_name": "Manvi",
+		"specialization": "orthopedician"
+	},
+	{
+		"doctor_name": "Prajaktha",
+		"specialization": "opthomologist"
+	},
+	{
+		"doctor_name": "Ankur",
+		"specialization": "oncologist"
+	},
+	{
+		"doctor_name": "Ravi",
+		"specialization": "general pedician"
+	},
+	{
+		"doctor_name": "Abhijit",
+		"specialization": "general pedician"
+	},
+	{
+		"doctor_name": "Bhoomi",
+		"specialization": "renal specialist"
+	},
+	{
+		"doctor_name": "Prakhyath Sinha",
+		"specialization": "nephrologist"
+	}
+]
