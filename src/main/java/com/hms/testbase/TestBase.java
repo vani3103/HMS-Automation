@@ -8,6 +8,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 
@@ -43,6 +44,8 @@ public static void initialization()
 	String browsername=prop.getProperty("browser");
 	if(browsername.equalsIgnoreCase("chrome")) {
 		System.setProperty(prop.getProperty("chromedriver_key"), prop.getProperty("chromedriver_path"));
+		/*ChromeOptions options=new ChromeOptions();
+		options.addArguments("headless");*/
 		driver=new ChromeDriver();
 	}
 	else {
@@ -53,6 +56,8 @@ public static void initialization()
 	eventListener = new WebEventListener();
 	e_driver.register(eventListener);
 	driver = e_driver;
+	
+
 	driver.manage().deleteAllCookies();
 	driver.manage().window().maximize();
 	driver.manage().timeouts().implicitlyWait(Loadtimes.implicitwait, TimeUnit.MILLISECONDS);

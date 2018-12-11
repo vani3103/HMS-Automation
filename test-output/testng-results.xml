@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="28753" started-at="2018-12-07T13:08:03Z" finished-at="2018-12-07T13:08:32Z">
+  <suite name="Default suite" duration-ms="13261" started-at="2018-12-11T08:58:44Z" finished-at="2018-12-11T08:58:58Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="28753" started-at="2018-12-07T13:08:03Z" finished-at="2018-12-07T13:08:32Z">
+    <test name="Default test" duration-ms="13261" started-at="2018-12-11T08:58:44Z" finished-at="2018-12-11T08:58:58Z">
       <class name="com.hms.tests.HomePageTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.hms.tests.HomePageTest@6ba0ac]" name="setup" is-config="true" duration-ms="25234" started-at="2018-12-07T13:08:03Z" finished-at="2018-12-07T13:08:28Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.hms.tests.HomePageTest@ebc39e]" name="setup" is-config="true" duration-ms="11179" started-at="2018-12-11T08:58:44Z" finished-at="2018-12-11T08:58:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="verify_LoginTest()[pri:2, instance:com.hms.tests.HomePageTest@6ba0ac]" name="verify_LoginTest" duration-ms="3413" started-at="2018-12-07T13:08:28Z" finished-at="2018-12-07T13:08:32Z">
+        <test-method status="PASS" signature="verify_LoginTest()[pri:2, instance:com.hms.tests.HomePageTest@ebc39e]" name="verify_LoginTest" duration-ms="2005" started-at="2018-12-11T08:58:55Z" finished-at="2018-12-11T08:58:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_LoginTest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.hms.tests.HomePageTest@6ba0ac]" name="teardown" is-config="true" duration-ms="1" started-at="2018-12-07T13:08:32Z" finished-at="2018-12-07T13:08:32Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.hms.tests.HomePageTest@ebc39e]" name="teardown" is-config="true" duration-ms="6" started-at="2018-12-11T08:58:58Z" finished-at="2018-12-11T08:58:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

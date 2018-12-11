@@ -1,5 +1,6 @@
 package com.hms.pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -76,6 +77,10 @@ public class AppointmentsPage extends TestBase{
 		AddNewAppointment_link.click();
 		return new AddAppointmentsPage();
 		
+	}
+	public void delete_appointment(String name)
+	{
+		driver.findElement(By.xpath("//table//tr[6]//td/child::table//tr//td[contains(text(),'"+name+"')]//following-sibling::td//a[contains(text(),'Delete')]")).click();
 	}
 	
 }

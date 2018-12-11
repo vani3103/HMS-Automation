@@ -34,11 +34,11 @@ public class DoctorsPage extends TestBase {
 	}
 	public void modify_doctor_data(String name)
 	{
-		driver.findElement(By.xpath("//table//tr[5]//td/child::table//tr//td[contains(text(),'"+name+"')]//following-sibling::td//a[contains(text(),'Modify')]")).click();;
+		driver.findElement(By.xpath("//table//tr[5]//td/child::table//tr//td[contains(text(),'"+name+"')]//following-sibling::td//a[contains(text(),'Modify')]")).click();
 	}
 	public void delete_doctor_data(String name)
 	{
-		driver.findElement(By.xpath("//table//tr[5]//td/child::table//tr//td[contains(text(),'"+name+"')]//following-sibling::td//a[contains(text(),'Delete')]")).click();;
+		driver.findElement(By.xpath("//table//tr[5]//td/child::table//tr//td[contains(text(),'"+name+"')]//following-sibling::td//a[contains(text(),'Delete')]")).click();
 	}
 
 }

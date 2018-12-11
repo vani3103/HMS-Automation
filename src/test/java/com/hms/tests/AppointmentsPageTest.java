@@ -5,6 +5,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import com.hms.pages.AddAppointmentsPage;
 import com.hms.pages.AppointmentsPage;
 import com.hms.pages.HomePage;
 import com.hms.testbase.TestBase;
@@ -12,6 +13,7 @@ import com.hms.testbase.TestBase;
 public class AppointmentsPageTest extends TestBase {
 HomePage homepage;
 AppointmentsPage appointmentspage;
+AddAppointmentsPage addappointmentspage;
 public  AppointmentsPageTest()
 {
 super();
@@ -21,6 +23,8 @@ public void setup()
 {
 	initialization();
 	homepage=new HomePage();
+	appointmentspage=new AppointmentsPage();
+	addappointmentspage= new AddAppointmentsPage();
 	appointmentspage=homepage.Login(prop.getProperty("username"), prop.getProperty("password"));
 }
 @Test(priority=1)
@@ -72,10 +76,17 @@ public void verify_AddNewAppointment_link()
 public void add_new_appointment()
 {
 	appointmentspage.add_New_Appointment();
+	addappointmentspage.create_appointment(3, 4, "08:20", "18/12/12");
+	
+}
+@Test(priority=9)
+public void delete_appointment()
+{
+appointmentspage.delete_appointment("aaa1");
 }
 @AfterMethod
 public void teardown()
 {
-	driver.quit();
+	//driver.quit();
 }
 }
